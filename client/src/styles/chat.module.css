@@ -1,0 +1,84 @@
+a.userID {
+	text-decoration: none;
+	color: black;
+}
+
+button.chatStart {
+	width: 100px;
+	border: 1px solid #8b4513;
+	color: #8b4513;
+	background-color: #fffff0;
+	font-size: 80%;
+	font-size: 105%;
+	margin-top: 20px;
+	padding: 5px;
+}
+
+.wholeLeft {
+	border: 1px solid #8b4513;
+	width: 80%;
+}
+
+.wholeRight {
+	border: 1px solid #8b4513;
+	width: 80%;
+	background-color: #fff5ee;
+}
+
+.left {
+	margin-left: 10px;
+	text-align: left;
+}
+
+.right {
+	margin-right: 10px;
+	text-align: right;
+}
+
+.dateLeft {
+	margin-left: 10px;
+	text-align: left;
+	font-size: 80%;
+}
+
+.dateRight {
+	margin-right: 10px;
+	text-align: right;
+	font-size: 80%;
+}
+
+.leftSmall {
+	margin-left: 10px;
+	text-align: left;
+	font-size: 80%;
+}
+
+.sendButtoun {
+	text-align: right;
+	margin-right: 20%;
+}
+
+button.chatSend {
+	width: 100px;
+	border: 1px solid #8b4513;
+	color: #8b4513;
+	background-color: #fffff0;
+	font-size: 105%;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+button.chatSend:hover {
+	cursor: pointer;
+}
+
+.textareaChat {
+	resize: none;
+	width: 60%;
+	height: 100px;
+	font-size: 15px;
+	outline: none;
+	border: none;
+	background: #fdf5e6;
+	padding: 8px;
+}

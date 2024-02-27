@@ -1,0 +1,103 @@
+/* Timeleine.jsx */
+
+.whole {
+	border: 1px solid #8b4513;
+	width: 80%;
+}
+
+.content {
+	position: relative;
+	border-bottom: 1px solid;
+}
+
+.contentLink {
+	text-decoration: none;
+	color: black;
+}
+
+.content > p {
+	margin-left: 20px;
+}
+
+.date, .userID {
+	font-size: 14px;
+	text-align: right;
+	margin-right: 20px;
+}
+
+.line {
+	border-bottom: 1px solid;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.small {
+	font-size: 11px;
+}
+
+/* PostCreate.jsx */
+
+.textareaPost {
+	resize: none;
+	width: 80%;
+	height: 200px;
+	font-size: 15px;
+	outline: none;
+	border: none;
+	background: #fdf5e6;
+	padding: 8px;
+}
+
+.action {
+	width: 100%;
+	border: 1px solid #8b4513;
+	color: #8b4513;
+	background-color: #fffff0;
+	font-size: 80%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 3px;
+	width: 60px;
+}
+
+/* Post.jsx */
+.mention {
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 11px;
+}
+
+/* Home.jsx */
+.followWrap {
+	display: flex;
+	justify-content: flex-start;
+	gap: 20%;
+}
+
+.follow {
+	display: flex;
+	gap: 10px;
+}
+
+button.followAction {
+	width: 100px;
+	border: 1px solid #8b4513;
+	color: #8b4513;
+	background-color: #fffff0;
+	font-size: 105%;
+	padding: 5px;
+}
+
+button.followAction:hover {
+	cursor: pointer;
+}
+
+.followButton {
+	position: absolute;
+	right: 29.8%;
+}

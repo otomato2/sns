@@ -1,0 +1,30 @@
+button.logout {
+	display: block;
+	margin: auto;
+	width: 100px;
+	border: 1px solid #8b4513;
+	color: #8b4513;
+	background-color: #fffff0;
+	font-size: 80%;
+	font-size: 105%;
+	margin-bottom: 100px;
+	padding: 5px;
+}
+
+button.logout:hover {
+	cursor: pointer;
+}
+
+.inter {
+	padding-bottom: 20px;
+}
+
+a.naviLink {
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+}
+
+a.naviLink:hover {
+	border: 1px dashed #8b4513;
+}

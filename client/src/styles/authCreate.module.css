@@ -1,0 +1,85 @@
+body {
+	font-family: sans-serif;
+}
+
+.page {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+label {
+	display: block;
+	font-size: 80%;
+}
+
+input {
+	display: block;
+	outline: none;
+	border: none;
+	background: #fdf5e6;
+	padding: 8px;
+	width: 300px;
+}
+
+.formWrapper {
+	padding-bottom: 10px;
+}
+
+button.authCreate  {
+	display: block;
+	margin: auto;
+	width: 100%;
+	border: 1px solid #8b4513;
+	color: #8b4513;
+	background-color: #ffa07a;
+	font-size: 80%;
+}
+
+.center {
+	text-align: center;
+}
+
+.submit {
+	padding-top: 10px;
+}
+
+a.registration {
+	text-decoration: none;
+	font-size: 80%;
+}
+
+a.registration:hover {
+	text-decoration: underline;
+	text-decoration-style: dashed;
+	text-underline-offset: 3px;
+}
+
+/* UserConfChg.jsx */
+
+button.submit {
+	width: 180px;
+	border: 1px solid #8b4513;
+	color: #8b4513;
+	background-color: #fffff0;
+	font-size: 80%;
+	padding: 5px;
+}
+
+button.delete {
+	width: 180px;
+	border: 1px solid #b22222;
+	color: white;
+	background-color: #b22222;
+	font-size: 80%;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.attention {
+	text-align: center;
+	color: red;
+	width: 300px;
+	font-size: 80%;
+}
