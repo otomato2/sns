@@ -60,6 +60,7 @@ function Post () {
 	useEffect(() => {
 		Axios.get(baseURL + `/post/${postParams['userIDParam']}/${postParams['postDateParam']}/`)
 		.then((response) => {
+			console.log(response.data)
 			setParseResult(postParse(response.data));
 		})
 	}, []);

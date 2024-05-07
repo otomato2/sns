@@ -23,7 +23,7 @@ router.get('/:userIDParam/:postDateParam/', async function(req, res, next) {
 		await sleep(SLEEP_TIME);
 
 		const dataPrev = await session.executeRead(tx => {
-			return tx.run(`MATCH (:User {userID:'${userID}'})-[:POSTED]->(:Post {status:'valid', datetime:datetime('${isoString}')})-[:REPLY]->(p:Post {status:'valid'})<-[:POSTED]-(u:User) RETURN u.userID, p.root, p.likeCnt, p.nutralCnt, p.dislikeCnt, p.reply, p.datetime, p.mention, p.content ORDER BY p.datetime`)
+			return tx.run(`MATCH (:User {userID:'${userID}'})-[:POSTED]->(:Post {status:'valid', datetime:datetime('${isoString}')})-[:REPLY]->(p:Post {status:'valid'})<-[:POSTED]-(u:User) RETURN p.root, u.userID, p.likeCnt, p.nutralCnt, p.dislikeCnt, p.reply, p.datetime, p.mention, p.content ORDER BY p.datetime`)
 		});
 		let resultPrev = '';
 		if (dataPrev.records.length != 0) {

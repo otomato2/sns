@@ -39,7 +39,7 @@ router.get('/:userIDFromParam/:userIDToParam/:contentParam', async function(req,
 
 		// setting
     const data = await session.executeWrite(tx => {
-      return tx.run(`MATCH (u1:User {userID:'${userIDFrom}'}) WHERE u1 IS NOT NULL MATCH (u2:User {userID:'${userIDTo}'}) WHERE u2 IS NOT NULL CREATE (u1)-[:CHAT {direction:'from'}]->(:Chat {status:'valid', sender:'', datetime:datetime(), content:'${content}'})-[:CHAT {direction:'to'}]->(u2);`)
+      return tx.run(`MATCH (u1:User {userID:'${userIDFrom}'}) WHERE u1 IS NOT NULL MATCH (u2:User {userID:'${userIDTo}'}) WHERE u2 IS NOT NULL CREATE (u1)-[:CHAT {direction:'from'}]->(:Chat {status:'valid', sender:'${userIDFromElementID}', datetime:datetime(), content:'${content}'})-[:CHAT {direction:'to'}]->(u2);`)
 		});
 		
 		res.send('OK');

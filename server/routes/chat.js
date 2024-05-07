@@ -23,8 +23,7 @@ router.get('/:userIdFromParam/:userIdToParam/', async function(req, res, next) {
 		});
 		let result = '';
 		if (data.records.length == 0) {
-			errCode = 1;
-			res.json({status:'failure', errCode: errCode});
+			res.json({status:'failure'});
 			return;
 		}
 
@@ -56,9 +55,9 @@ router.get('/:userIdFromParam/:userIdToParam/', async function(req, res, next) {
 
 
 
-		res.json(result)
+		res.send(result)
 	} catch (error) {
-		res.json({status:'failure', errCode: errCode});
+		res.send(err);
 	}
 });
 

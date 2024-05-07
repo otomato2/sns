@@ -15,6 +15,7 @@ function chatParse(response, cookies) {
 			{response.map((item) => {
 				const datetimeISO = item['datetime'].slice(0, 10) + ' ' + item['datetime'].slice(11, 16);
 				if (item['sender'] !== cookies.userID) {
+					console.log('left')
 					return (
 						<>
 							<div className={chatStyle.wholeLeft}>
@@ -27,6 +28,7 @@ function chatParse(response, cookies) {
 						</>
 					)
 				} else {
+					console.log('right')
 					return (
 						<>
 							<div className={chatStyle.wholeRight}>

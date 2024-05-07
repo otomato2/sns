@@ -20,6 +20,6 @@
 - リンクの自動生成
 
 # その他
-このバージョンのアプリケーションは yukiyoshi0001U [at] gmail.com までご連絡いただければ，otomato2.com で利用が出来ます．( [at] は @ に置き換えてください )<br>
+このバージョンのアプリケーションは yukiyoshi0001U[at]gmail.com までご連絡いただければ，otomato2.com で利用が出来ます．( [at] は @ に置き換えてください )<br>
 なお，otomato2.com は AWS を利用しています．<br>
 今後は問題点を解消し，また TypeScript へ移行したいと考えています．<br>

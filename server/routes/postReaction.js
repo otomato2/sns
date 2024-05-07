@@ -63,6 +63,8 @@ router.get('/detach/:userIDFromParam/:userIDToParam/:postDateParam/:sentimentPar
     const data = await session.executeWrite(tx => {
       return tx.run(`MATCH (u1:User {userID:'${userIDFrom}'})-[l:${sentiment.toUpperCase()}]->(p:Post {datetime:datetime('${isoString}')})<-[:POSTED]-(:User {userID:'${userIDTo}'}) DELETE l SET p.${sentiment}Cnt=p.${sentiment}Cnt-1;`)
 		});
+
+		console.log(`MATCH (u1:User {userID:'${userIDFrom}'})-[l:${sentiment.toUpperCase()}]->(p:Post {datetime:datetime('${isoString}')})<-[:POSTED]-(:User {userID:'${userIDTo}'}) DELETE l SET p.${sentiment}Cnt=p.${sentiment}Cnt-1;`)
 		
 		res.send('OK');
 	} catch (error) {
