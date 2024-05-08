@@ -26,6 +26,7 @@ router.get('/:userIdParam/', async function(req, res, next) {
 		});
 		if (dataUserInfo.records.length == 0) {
 			res.json({status:'failure', errCode: 1});
+			return;
 		}
 		resultUserInfo = dataUserInfo.records.map(item => item._fields);
 		const keys = ['follow', 'follower', 'userName', 'bio'];
