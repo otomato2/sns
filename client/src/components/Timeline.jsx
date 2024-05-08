@@ -58,7 +58,6 @@ function Timeline() {
   useEffect(() => {
     Axios.get(baseURL+`/timeline/${cookies.userID}/`)
     .then((response) => {
-      console.log(response.data.status)
       if (response.data.status === 'none') {
         setParseResult('"Chat" からユーザを検索してみましょう！');
         return;

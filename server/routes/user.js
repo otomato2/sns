@@ -25,7 +25,7 @@ router.get('/:userIdParam/', async function(req, res, next) {
       return tx.run(`MATCH (u:User {userID:'${userId}'}) RETURN u.follow, u.follower, u.userName, u.bio`)
 		});
 		if (dataUserInfo.records.length == 0) {
-			res.send(err + 1);
+			res.json({status:'failure', errCode: 1});
 		}
 		resultUserInfo = dataUserInfo.records.map(item => item._fields);
 		const keys = ['follow', 'follower', 'userName', 'bio'];

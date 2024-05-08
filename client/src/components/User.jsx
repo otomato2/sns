@@ -93,6 +93,11 @@ function User() {
 		}
 		Axios.get(baseURL+`/user/${userIDParams['userIDParam']}/`)
 		.then((response) => {
+			if (response.data.status === 'failuer') {
+				setProfileParseResult('ユーザは存在しません');
+				setParseResult(' ')
+				return
+			}
 			setProfileParseResult(profileParse(response.data[0][0], userIDParams['userIDParam']));
 			const newResponse = response.data.slice(1);
 			setParseResult(postParse(newResponse))
